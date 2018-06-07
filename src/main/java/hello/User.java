@@ -1,7 +1,16 @@
 package hello;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "usercollection")
 public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column(name = "username")
     private String userName;
     public User() {
 
