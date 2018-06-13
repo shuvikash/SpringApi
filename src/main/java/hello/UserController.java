@@ -14,6 +14,7 @@ public class UserController {
     private List<User> users = new ArrayList<User>();
 
     @RequestMapping(method=RequestMethod.GET , path="/users")
+    @CrossOrigin(origins = "http://localhost:8080")
     public Iterable getUser()
     {
         return repository.findAll();
