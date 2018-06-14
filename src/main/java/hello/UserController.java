@@ -21,6 +21,7 @@ public class UserController {
 
     }
    @RequestMapping(method=RequestMethod.POST , path="/users")
+   @CrossOrigin(origins = "http://localhost:8080")
     public String postUser(@RequestBody User user){
        repository.save(user);
        // User temp=new User(counter.incrementAndGet(),user.getUserName() );
