@@ -31,36 +31,48 @@ public class Course {
         this.level=level;
         this.length=length;
     }
+
+
     public int getId() {
         return id;
     }
+
     public void setId(int id) {
         this.id = id;
     }
+
     public String getCourseName() {
         return courseName;
     }
+
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
+
     public String getDescription() {
         return description;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public int getLevel() {
         return level;
     }
+
     public void setLevel(int level) {
         this.level = level;
     }
+
     public String getLength() {
         return length;
     }
+
     public void setLength(String length) {
-        this.description = length;
+        this.length = length;
     }
+
     @Override
     public String toString() {
         return "Course [id=" + id + ", courseName=" + courseName + ", description=" + description + ", level=" + level + ", length=" + length + "]";
