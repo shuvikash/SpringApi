@@ -1,6 +1,7 @@
 package hello;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "usercollection")
@@ -19,6 +20,18 @@ public class User {
         this.id = id;
         this.userName=userName;
     }
+    @ManyToMany
+    @JoinTable(name = "usercourse", joinColumns = @JoinColumn(name = "userid", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "courseid", referencedColumnName = "id"))
+    private List<Course> courses;
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void setCourses(List<Course> courses) {
+        this.courses = courses;
+    }
+
     public int getId() {
         return id;
     }
