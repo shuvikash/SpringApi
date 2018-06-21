@@ -9,7 +9,7 @@ public class UseCourseController {
     UserCourseRepository repository;
 
     @RequestMapping(method=RequestMethod.POST , path="/usercourses")
-    //@CrossOrigin(origins = "http://localhost:8080")
+    @CrossOrigin(origins = "http://localhost:8080")
     public String postUserCourse(@RequestBody UserCourse course){
         repository.save(course);
         return "ok";

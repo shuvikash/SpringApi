@@ -19,7 +19,8 @@ public class UserCourse {
     public UserCourse() {
 
     }
-    public UserCourse(int userid, int courseid) {
+    public UserCourse(int id,int userid, int courseid) {
+        this.id=id;
         this.userid = userid;
         this.courseid=courseid;
     }
