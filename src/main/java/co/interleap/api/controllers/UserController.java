@@ -29,7 +29,7 @@ public class UserController {
        // User temp=new User(counter.incrementAndGet(),user.getUserName() );
        //users.add(temp);
        //return temp;
-       return "ok";
+       return "inserted";
     }
 
 }
