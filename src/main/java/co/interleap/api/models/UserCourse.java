@@ -1,4 +1,4 @@
-package co.interleap.api;
+package co.interleap.api.models;
 
 import javax.persistence.*;
 

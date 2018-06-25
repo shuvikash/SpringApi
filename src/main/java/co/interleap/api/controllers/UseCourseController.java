@@ -1,5 +1,7 @@
-package co.interleap.api;
+package co.interleap.api.controllers;
 
+import co.interleap.api.repositories.UserCourseRepository;
+import co.interleap.api.models.UserCourse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
