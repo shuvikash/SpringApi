@@ -1,6 +1,4 @@
-package hello;
-
-import java.util.*;
+package co.interleap.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

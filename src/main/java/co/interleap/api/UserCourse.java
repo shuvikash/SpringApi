@@ -1,4 +1,4 @@
-package hello;
+package co.interleap.api;
 
 import javax.persistence.*;
 
